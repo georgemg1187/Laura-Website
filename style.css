@@ -1,0 +1,575 @@
+/* CSS Variables */
+
+@font-face {
+    font-family: gotham-light;
+    src: url(fonts/GothamLight.otf)
+}
+
+html {
+    font-family: gotham-light;
+}
+
+body {
+    margin: 0px;
+    background: rgba(216, 245, 231, 1);
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+/* Menu Bar here */
+
+#menu-container {
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    background-color: rgb(216, 245, 231);
+    transition: all 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(191, 171, 171, 0.5) 2px 3px 3px;
+}
+
+#menu {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    width: 100%;
+}
+
+#menu ul {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu ul li {
+    display: inline;
+    padding: 0 10px;
+    border-right: 2px solid black;
+}
+
+#menu ul li:last-of-type {
+    display: inline;
+    padding: 0 0 0 10px;
+    border-right: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#menu ul li a:link {
+    color: black;
+}
+
+#menu ul li a:visited {
+    color: black;
+}
+
+#logo {
+    font-size: 30px;
+    line-height: 1;
+    transition: all 0.3s ease-in;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+}
+
+.open-menu {
+    visibility: visible !important;
+    height: auto !important;
+    margin-top: 20px !important;
+    font-size: 12px
+}
+
+/* Scrooling style here */
+
+.logo-scrolled {
+    font-size: 20px !important;
+}
+
+/* First Section Here */
+
+#container {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    background: url(images/hotelRoom.jpg) center fixed no-repeat;
+    background-size: cover;
+}
+
+#parallax {
+    background: rgba(216, 245, 231, 0.8);
+    font-size: 26px;
+    height: 80vh;
+    min-height: 759px;
+}
+
+#parallax div {
+    text-align: center;
+    padding: 40px;
+    display: block;
+    max-width: 1050px;
+    position: relative;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+}
+
+#parallax div h1 {
+    margin: 50px 0;
+}
+
+#find-out-more {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 50px 0;
+    text-transform: uppercase;
+    box-shadow: #b9b4b4 2px 2px 2px;
+    cursor: pointer;
+}
+
+#find-out-more:hover {
+    box-shadow: #b9b4b4 4px 4px 4px;
+}
+
+/* Fast Contact --- Second Arrea */
+
+#fast-contact,
+#why-us,
+#footer-container {
+    display: flex;
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#fast-contact {
+    min-height: 20vh;
+    justify-content: space-between;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+}
+
+#fast-contact .blocks {
+    padding-right: 20px;
+}
+
+#fast-contact .blocks:last-of-type {
+    padding-right: 0px;
+}
+
+#fast-contact .box {
+    margin-left: 10px;
+}
+
+.large {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+#fast-contact-info {
+    display: none;
+}
+/* Services Main - second Areea */
+
+#services-main {
+    background: url(images/cleaning_v2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#offer-container {
+    background: rgba(86, 219, 155, 0.5);
+    padding: 70px 30px;
+}
+
+#offer {
+    max-width: 1350px;
+    margin: 0 auto;
+    color: black;
+    font-size: 18px;
+}
+
+#offer>div {
+    max-width: 700px;
+}
+
+#offer p {
+    padding: 15px 0;
+}
+
+.small-text {
+    color: #707070;
+    text-transform: uppercase;
+}
+
+.large-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.spaced {
+    line-height: 1.4;
+}
+
+#angle img {
+    width: 100%;
+}
+
+/* Why us section */
+
+#why-us {
+    flex-direction: column;
+}
+
+#why-us .blocks {
+    flex: 0;
+    margin: 10px 0;
+    min-height: 100px;
+    background-color: #d5efe2;
+}
+
+#why-us svg {
+    min-width: 150px;
+}
+
+#description p {
+    color: #707070;
+    padding: 0px;
+}
+
+#description {
+    margin: 70px 0px;
+}
+
+.name {
+    font-weight: bold;
+    height: 100%;
+    min-width: 200px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.description {
+    padding: 10px 20px;
+}
+
+/* Footer */
+
+footer {
+    background: #312c32;
+    color: white;
+}
+
+#footer-container {
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+#address {
+    width: 32%;
+}
+
+#theForm {
+    width: 27%;
+}
+
+#user-message {
+    width: 35%;
+    margin: 0px 30px;
+    box-sizing: border-box;
+}
+
+#user-message textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#address p,
+#address a {
+    margin-left: 10px;
+}
+
+#address a {
+    text-decoration: none;
+    color: white;
+}
+
+#street,
+#phone,
+#email {
+    display: flex;
+    align-items: center;
+}
+
+input,
+#submit-button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+#submit-button {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#theForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-button {
+    background: rgb(216, 245, 231);
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background: rgb(174, 197, 187);
+}
+
+#credits {
+    border-top: 1px solid rgb(174, 197, 187);
+    padding: 20px;
+    text-align: center;
+    background-color: #1b191b;
+}
+
+.selected-Icon-FS {
+    color: darkgray;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1051px) {
+    #fast-contact .fa-3x {
+        font-size: 35px;
+    }
+    .large {
+        font-size: 18px;
+    }
+    #footer-container {
+        flex-wrap: wrap;
+    }
+    #address {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    #user-message {
+        margin: 0;
+        width: 55%;
+        margin-right: 4%;
+    }
+    #theForm {
+        width: 41%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    h1 {
+        font-size: 1.3em;
+    }
+    #menu {
+        flex-wrap: wrap;
+    }
+    #menu ul {
+        width: 100%;
+        display: block;
+        text-align: left;
+        visibility: hidden;
+        height: 0px;
+    }
+    #menu ul li {
+        padding: 10px 10px;
+        border-top: 1px solid black;
+        list-style: none;
+        display: block;
+        border-right: none;
+    }
+    #menu ul li:last-of-type {
+        padding: 10px 10px 10px 10px;
+        border-right: none;
+        display: block;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    #parallax {
+        height: 100vh;
+    }
+    #parallax p {
+        font-size: 22px;
+    }
+    /* Fast contact arrea starts here */
+    #fast-contact {
+        min-height: 20vh;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #fast-contact .blocks {
+        padding: 15px 0!important;
+        cursor: pointer;
+    }
+    #fast-contact .fa-3x {
+        font-size: 40px;
+    }
+    .box {
+        margin-left: 0!important;
+        display: none;
+    }
+
+    #fast-contact-info {
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Footer Style starts here */
+    #street,
+    #phone,
+    #email {
+        flex-direction: column;
+    }
+    #address p,
+    #address a {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    #find-out-more {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    #parallax p {
+        font-size: 20px;
+    }
+    #why-us .blocks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name {
+        text-align: center;
+        width: auto;
+        padding: 5px;
+    }
+    #why-us svg {
+        padding: 10px;
+    }
+    #address {
+        flex-direction: column;
+        min-height: 250px;
+    }
+    #address p,
+    #address a {
+        margin-top: 10px;
+    }
+    #user-message {
+        margin: 0 0 30px 0;
+        width: 100%;
+    }
+    #theForm {
+        width: 100%;
+    }
+    input,
+    #submit-button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    #find-out-more {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #fast-contact {
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 1.17em;
+    }
+
+    #parallax p {
+        font-size: 18px;
+    }
+    #find-out-more {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 435px) {
+    #parallax p {
+        line-height: 1.2;
+        font-size: 16px;
+    }
+
+    #find-out-more {
+        font-size: 14px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .large {
+        font-size: 16px;
+    }
+} 
