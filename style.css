@@ -268,13 +268,17 @@ p {
 .name {
     font-weight: bold;
     height: 100%;
-    min-width: 200px;
+    min-width: 255px;
     width: 200px;
     font-size: 20px;
 }
 
 .description {
     padding: 10px 20px;
+}
+
+#why-us-list {
+    margin-bottom: 60px;
 }
 
 /* Footer */

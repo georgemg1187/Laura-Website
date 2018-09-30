@@ -11,6 +11,7 @@ const fastContactIcons = document.querySelectorAll("#fast-contact .blocks");
 const fastContactText = document.querySelectorAll("#fast-contact .box");
 const fastContactInfo = document.getElementById("fast-contact-info");
 const submitBtn = document.getElementById('submit-button');
+const currentDate = new Date();
 
 function windowWidth() {
     return window.innerWidth;
@@ -107,3 +108,6 @@ function sentForm(event) {
 
     formRequest.send(params);
 }
+
+//Update trademark year
+document.getElementById("current-year").textContent = ", " + currentDate.getFullYear();
