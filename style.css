@@ -75,9 +75,13 @@ p {
     color: black;
 }
 
+.activeButton {
+    font-weight: bolder;
+}
+
 #logo {
-    font-size: 30px;
-    line-height: 1;
+    /* font-size: 30px;
+    line-height: 1; */
     transition: all 0.3s ease-in;
     display: flex;
     align-items: center;
@@ -102,6 +106,8 @@ p {
 
 .logo-scrolled {
     font-size: 20px !important;
+    height: 40px;
+    width: 40px;
 }
 
 /* First Section Here */
