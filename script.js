@@ -13,7 +13,24 @@ const fastContactIcons = document.querySelectorAll("#fast-contact .blocks");
 const fastContactText = document.querySelectorAll("#fast-contact .box");
 const fastContactInfo = document.getElementById("fast-contact-info");
 const submitBtn = document.getElementById('submit-button');
+const footerConainter = document.getElementById("kontakt");
+const usserMessage = document.getElementById("user-message");
+const theForm = document.getElementById("theForm");
+const logo = document.getElementById("logo");
+const menuItems = Array.prototype.slice.call(document.querySelectorAll("#menu li"));
+const sections = ["zuhause", "dienstleistungen", "warum-wir", "kontakt"];
 const currentDate = new Date();
+
+
+menuItems.forEach(function(element, index) {
+    element.addEventListener("click", function() {
+        event.preventDefault();
+        window.scrollTo({
+            top: document.getElementById(sections[index]).offsetTop,
+            behavior: "smooth"
+        })
+    })
+})
 
 menuButtons[0].classList.add('activeButton');
 
@@ -118,12 +135,33 @@ function sentForm(event) {
 
     formRequest.onreadystatechange = function () {//Call a function when the state changes.
         if (formRequest.readyState == XMLHttpRequest.DONE && formRequest.status == 200) {
-            console.log(this.responseText, 'ready');
+            // console.log(this.responseText, 'ready');
+            onSubmitComplete();
         }
     }
 
     formRequest.send(params);
 }
+
+function onSubmitComplete() {
+    usserMessage.style.display = "none";
+    theForm.style.display = "none";
+
+    var endMessageContainer = document.createElement("div");
+    endMessageContainer.classList.add("end-message");
+    var endMessage = "<div>" + "Vielen Dank." + "<br>" + "Wir kommen bald auf Sie zurück" + "</div>"
+    endMessageContainer.innerHTML = endMessage;
+
+    footerConainter.appendChild(endMessageContainer);
+}
+
+// Logo on click
+
+logo.addEventListener("click", logoAction);
+function logoAction() {
+    window.scrollTo({top: 0, behavior: "smooth"});
+}
+
 
 //Update trademark year
 document.getElementById("current-year").textContent = ", " + currentDate.getFullYear();

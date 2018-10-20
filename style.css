@@ -85,6 +85,7 @@ p {
     transition: all 0.3s ease-in;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu-icon {
@@ -112,7 +113,7 @@ p {
 
 /* First Section Here */
 
-#container {
+#zuhause {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -160,8 +161,8 @@ p {
 /* Fast Contact --- Second Arrea */
 
 #fast-contact,
-#why-us,
-#footer-container {
+#warum-wir,
+#kontakt {
     display: flex;
     max-width: 1350px;
     margin: auto;
@@ -202,7 +203,7 @@ p {
 }
 /* Services Main - second Areea */
 
-#services-main {
+#dienstleistungen {
     background: url(images/cleaning_v2.jpg) center no-repeat;
     background-size: cover;
 }
@@ -247,18 +248,18 @@ p {
 
 /* Why us section */
 
-#why-us {
+#warum-wir {
     flex-direction: column;
 }
 
-#why-us .blocks {
+#warum-wir .blocks {
     flex: 0;
     margin: 10px 0;
     min-height: 100px;
     background-color: #d5efe2;
 }
 
-#why-us svg {
+#warum-wir svg {
     min-width: 150px;
 }
 
@@ -294,7 +295,7 @@ footer {
     color: white;
 }
 
-#footer-container {
+#kontakt {
     justify-content: space-between;
     padding: 50px 30px;
 }
@@ -393,6 +394,16 @@ textarea,
     color: darkgray;
 }
 
+.end-message {
+    min-height: 150px;
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-align: center;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 1051px) {
@@ -402,7 +413,7 @@ textarea,
     .large {
         font-size: 18px;
     }
-    #footer-container {
+    #kontakt {
         flex-wrap: wrap;
     }
     #address {
@@ -417,6 +428,10 @@ textarea,
     }
     #theForm {
         width: 41%;
+    }
+    .end-message {
+        width: 100%;
+        font-size: 30px
     }
 }
 
@@ -496,6 +511,9 @@ textarea,
     #find-out-more {
         font-size: 17px;
     }
+    .end-message {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -506,7 +524,7 @@ textarea,
     #parallax p {
         font-size: 20px;
     }
-    #why-us .blocks {
+    #warum-wir .blocks {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -516,7 +534,7 @@ textarea,
         width: auto;
         padding: 5px;
     }
-    #why-us svg {
+    #warum-wir svg {
         padding: 10px;
     }
     #address {
@@ -543,6 +561,9 @@ textarea,
     #find-out-more {
         font-size: 16px;
     }
+    .end-message {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -560,6 +581,9 @@ textarea,
     #find-out-more {
         font-size: 15px;
     }
+    .end-message {
+        font-size: 24px;
+    }
 }
 
 
@@ -576,10 +600,16 @@ textarea,
     .box p {
         font-size: 16px;
     }
+    .end-message {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .large {
         font-size: 16px;
+    }
+    .end-message {
+        font-size: 20px;
     }
 } 
