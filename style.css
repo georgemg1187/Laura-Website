@@ -108,7 +108,7 @@ p {
 .logo-scrolled {
     font-size: 20px !important;
     height: 40px;
-    width: 40px;
+    /* width: 40px; */
 }
 
 /* First Section Here */
