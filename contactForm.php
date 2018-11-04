@@ -2,10 +2,10 @@
 
         echo 'Processing...';
 
-        $name = (string)$_POST['name'];
-        $subject = (string)$_POST['subject'];
-        $email = (string)$_POST['email'];
-        $message = (string)$_POST['message'];
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
     
         $mailTo = "LauraPutzservice@gmail.com;
         $headers = "From: ".$email;
